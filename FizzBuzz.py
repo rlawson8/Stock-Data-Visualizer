@@ -1,9 +1,8 @@
-for i in range(100):
-    if (i+1) % 3 == 0 and (i+1) % 5 == 0:
-        print ('FizzBuzz')
-    elif (i+1) % 3 == 0:
-        print ('Fizz')
-    elif (i+1) % 5 == 0:
-        print ('Buzz')
-    else: 
-        print (str(i+1))
+import itertools as itt
+
+f = itt.cycle([""] * 2 + ["Fizz"])
+b = itt.cycle([""] * 4 + ["Buzz"])
+fb = (fizz + buzz for fizz, buzz in zip(f, b))
+result = (word or n for word, n in zip(fb, itt.count(1)))
+for i in itt.islice(result, 100):
+    print(i)
