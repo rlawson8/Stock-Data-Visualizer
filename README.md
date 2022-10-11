@@ -1,2 +1,1 @@
-# FizzBuzz
 # Stock-Data-Visualizer
