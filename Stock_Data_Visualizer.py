@@ -1,0 +1,1 @@
+#Stock Data Visualizer application for Scrum Team 13
