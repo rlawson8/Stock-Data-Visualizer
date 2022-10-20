@@ -18,8 +18,7 @@ while i:
         print("2. Line\n")
         chartType = input("Enter the chart type you want (1, 2): ")
         if chartType != "1" and chartType != "2": print("Enter a 1 or 2 for chart type")
-
-
+    
     # P3. Get Time Series
     time_series = 0
     while time_series != 1 and time_series != 2 and time_series != 3 and time_series != 4:
@@ -38,7 +37,7 @@ while i:
     # P5. Get End Date
 
     # P6. Generate Graph
-    
+
     # Ask to repeat
     choice = input("\nWould you like to view more stock data? Press 'y' to continue: ")
     if(choice != 'y'):
