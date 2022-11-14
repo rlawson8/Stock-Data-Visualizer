@@ -77,11 +77,11 @@ while i:
     else:
         chart = pygal.Line()
     chart.title = 'Stock Data for ' + stockSymbol + ': ' + str(finalDate) + ' to ' + str(finalEndDate)
-    if time_series == 1:
+    if time_series == "1":
         url = 'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol='+stockSymbol+'&interval=60min&outputsize=full&apikey=TF2MH4AQ3EMH4GZL'
-    elif time_series == 2:
-        url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol='+stockSymbol+'&outputsize=full&apikey=TF2MH4AQ3EMH4GZL'
-    elif time_series == 3:
+    elif time_series == "2":
+        url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol='+stockSymbol+'&outputsize=full&apikey=TF2MH4AQ3EMH4GZL'
+    elif time_series == "3":
         url = 'https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY&symbol='+stockSymbol+'&outputsize=full&apikey=TF2MH4AQ3EMH4GZL'
     else:
         url = 'https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol='+stockSymbol+'&outputsize=full&apikey=TF2MH4AQ3EMH4GZL'
